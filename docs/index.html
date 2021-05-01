@@ -46,15 +46,6 @@
         }
       }
     }
-    const gitalk = new Gitalk({
-      clientID: '5b67a155acb256a4fb8a',
-      clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
-      repo: 'til',
-      owner: 'fakeYanss',
-      admin: ['fakeYanss'],
-      // facebook-like distraction free mode
-      distractionFreeMode: true
-    })
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -67,11 +58,25 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
-
+    const gitalk = new Gitalk({
+      clientID: '5b67a155acb256a4fb8a',
+      clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
+      repo: 'til',
+      owner: 'fakeYanss',
+      admin: ['fakeYanss'],
+      // facebook-like distraction free mode
+      distractionFreeMode: true
+    })
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.min.js"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
 </body>
 
 </html>
