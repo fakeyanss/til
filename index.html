@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>TIL</title>
@@ -8,7 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -22,9 +25,36 @@
       search: 'auto',
       ga: 'UA-112380656-1',
       //plugins: [
-	  //EditOnGithubPlugin.create(docBase, docEditBase, title)
+      //EditOnGithubPlugin.create(docBase, docEditBase, title)
       //]
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      markdown: {
+        renderer: {
+          code: function (code, lang) {
+            if (lang === "mermaid") {
+              return (
+                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+              );
+            }
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      }
     }
+    const gitalk = new Gitalk({
+      clientID: '5b67a155acb256a4fb8a',
+      clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
+      repo: 'til',
+      owner: 'fakeYanss',
+      admin: ['fakeYanss'],
+      // facebook-like distraction free mode
+      distractionFreeMode: true
+    })
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -35,17 +65,13 @@
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: '5b67a155acb256a4fb8a',
-    clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
-    repo: 'til',
-    owner: 'fakeYanss',
-    admin: ['fakeYanss'],
-    // facebook-like distraction free mode
-    distractionFreeMode: true
-  })
-</script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </body>
+
 </html>
