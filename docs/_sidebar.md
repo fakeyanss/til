@@ -1,4 +1,8 @@
   - Python
-    - [traverse floder](/Python/traverse-floder.md)
+    - file
+      - [get base filename](/Python/file/get-base-filename.md)
+      - [is floder](/Python/file/is-floder.md)
+      - [rename file](/Python/file/rename-file.md)
+      - [traverse floder](/Python/file/traverse-floder.md)
   - Shell
     - [alternative to ls linux](/Shell/alternative-to-ls-linux.md)

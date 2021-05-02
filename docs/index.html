@@ -20,8 +20,8 @@
     window.$docsify = {
       name: 'Things I Learn',
       repo: 'https://github.com/fakeyanss/til',
-      loadNavbar: true,
-      mergeNavbar: true,
+      // loadNavbar: true,
+      // mergeNavbar: true,
       loadSidebar: true,
       //logo: 'https://foreti.me/favicon.ico',
       formatUpdated: '{YYYY}-{MM}-{DD}',
@@ -60,7 +60,12 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
-  cdn.jsdelivr.net
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-javadoclike.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.min.js"></script>
   <script>
     function url_parse(url) {
       var left = url.indexOf('/#/');
@@ -90,10 +95,6 @@
       id: gittalk_id
     })
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.min.js"></script>
   <script>
     // if (typeof navigator.serviceWorker !== 'undefined') {
     // navigator.serviceWorker.register('sw.js')
