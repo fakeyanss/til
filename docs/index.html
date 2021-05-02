@@ -67,21 +67,6 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-javadoclike.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.min.js"></script>
   <script>
-    function url_parse(url) {
-      // var left = url.indexOf('/#/');
-      // if (left < 0) {
-      //   return url;
-      // }
-      var left = 0
-
-      var right = url.lastIndexOf('?');
-      if (right <= 0 || right < left) {
-        right = url.length;
-      }
-      return url.substring(left, right);
-    }
-    gittalk_id = url_parse(location.href);
-
     const gitalk = new Gitalk({
       clientID: '5b67a155acb256a4fb8a',
       clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
@@ -90,7 +75,7 @@
       admin: ['fakeYanss'],
       // facebook-like distraction free mode
       distractionFreeMode: true,
-      id: md5(gittalk_id)
+      id: md5(location.hash)
     })
   </script>
   <script>
