@@ -59,7 +59,23 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/md5@2.3.0/md5.min.js"></script>
+  cdn.jsdelivr.net
   <script>
+    function url_parse(url) {
+      var left = url.indexOf('/#/');
+      if (left < 0) {
+        return url;
+      }
+
+      var right = url.lastIndexOf('?');
+      if (right <= 0 || right < left) {
+        right = url.length;
+      }
+      return url.substring(left, right);
+    }
+    gittalk_id = url_parse(location.href);
+
     const gitalk = new Gitalk({
       clientID: '5b67a155acb256a4fb8a',
       clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
@@ -68,7 +84,7 @@
       admin: ['fakeYanss'],
       // facebook-like distraction free mode
       distractionFreeMode: true,
-      id: location.pathname
+      id: gittalk_id
     })
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
@@ -77,7 +93,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.min.js"></script>
   <script>
     // if (typeof navigator.serviceWorker !== 'undefined') {
-      // navigator.serviceWorker.register('sw.js')
+    // navigator.serviceWorker.register('sw.js')
     // }
   </script>
 </body>
