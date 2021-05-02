@@ -67,6 +67,17 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-javadoclike.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.min.js"></script>
   <script>
+    String.prototype.hashCode = function () {
+      var hash = 0,
+        i, chr;
+      if (this.length === 0) return hash;
+      for (i = 0; i < this.length; i++) {
+        chr = this.charCodeAt(i);
+        hash = ((hash << 5) - hash) + chr;
+        hash |= 0; // Convert to 32bit integer
+      }
+      return hash;
+    };
     const gitalk = new Gitalk({
       clientID: '5b67a155acb256a4fb8a',
       clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
@@ -75,7 +86,8 @@
       admin: ['fakeYanss'],
       // facebook-like distraction free mode
       distractionFreeMode: true,
-      id: location.hash
+      id: location.hash,
+      number: location.hash.hashCode()
     })
   </script>
   <script>
