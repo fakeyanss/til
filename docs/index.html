@@ -53,6 +53,35 @@
               window.reload;
             }
             window.title_id = window.location.hash.match(/#(.*?)([?]|$)/)[1];
+
+            var label, domObj, main, divEle, gitalk;
+            label = vm.route.path.split("/").pop();
+            domObj = Docsify.dom;
+            main = domObj.getNode("#main");
+
+            /**
+             * render gittalk
+             */
+            if (vm.route.path.includes("zh-cn")) {
+              gitalkConfig.language = "zh-CN";
+            }
+            Array.apply(
+              null,
+              document.querySelectorAll("div.gitalk-container")
+            ).forEach(function (ele) {
+              ele.remove();
+            });
+            divEle = domObj.create("div");
+            divEle.id = "gitalk-container-" + label;
+            divEle.className = "gitalk-container";
+            divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+            domObj.appendTo(domObj.find(".content"), divEle);
+            gitalk = new Gitalk(
+              Object.assign(gitalkConfig, {
+                id: !label ? "home" : label
+              })
+            );
+            gitalk.render("gitalk-container-" + label);
           })
         }
       ]
@@ -65,7 +94,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
@@ -75,17 +104,28 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-javadoclike.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.min.js"></script>
   <script>
-    const gitalk = new Gitalk({
-      clientID: '5b67a155acb256a4fb8a',
-      clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
-      repo: 'til',
-      owner: 'fakeYanss',
-      admin: ['fakeYanss'],
+    // const gitalk = new Gitalk({
+    //   clientID: '5b67a155acb256a4fb8a',
+    //   clientSecret: 'e30fc850ad631aeb76cc280f7e2ebe437ad427b8',
+    //   repo: 'til',
+    //   owner: 'fakeYanss',
+    //   admin: ['fakeYanss'],
+    //   perPage: 20,
+    //   enableHotKey: true,
+    //   title: decodeURI(window.title_id),
+    //   id: md5(window.location.hash)
+    // })
+    gitalkConfig = {
+      clientID: "5b67a155acb256a4fb8a",
+      clientSecret: "e30fc850ad631aeb76cc280f7e2ebe437ad427b8",
+      repo: "til",
+      owner: "fakeYanss",
+      admin: ["fakeYanss"],
       perPage: 20,
-      enableHotKey: true,
-      title: decodeURI(window.title_id),
-      id: md5(window.location.hash)
-    })
+      language: "en",
+      labels: ["Gitalk"],
+      distractionFreeMode: false
+    };
   </script>
   <script>
     // if (typeof navigator.serviceWorker !== 'undefined') {
