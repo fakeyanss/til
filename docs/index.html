@@ -75,6 +75,9 @@
       return url.substring(left, right);
     }
     gittalk_id = url_parse(location.href);
+    if (gittalk_id.length > 45) {
+      gittalk_id = md5(gittalk_id);
+    }
 
     const gitalk = new Gitalk({
       clientID: '5b67a155acb256a4fb8a',
