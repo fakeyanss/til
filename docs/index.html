@@ -46,7 +46,15 @@
         }
       },
       plugins: [
-        EditOnGithubPlugin.create("https://github.com/fakeyanss/til/blob/master/docs/")
+        EditOnGithubPlugin.create("https://github.com/fakeyanss/til/blob/master/docs/"),
+        function (hook, vm) {
+          hook.doneEach(function () {
+            if (window.title_id !== window.location.hash.match(/#(.*?)([?]|$)/)[1]) {
+              window.reload;
+            }
+            window.title_id = window.location.hash.match(/#(.*?)([?]|$)/)[1];
+          })
+        }
       ]
     }
   </script>
@@ -73,9 +81,10 @@
       repo: 'til',
       owner: 'fakeYanss',
       admin: ['fakeYanss'],
-      distractionFreeMode: true,
       perPage: 20,
-      id: location.pathname
+      enableHotKey: true,
+      title: decodeURI(window.title_id),
+      id: md5(window.location.hash)
     })
   </script>
   <script>
