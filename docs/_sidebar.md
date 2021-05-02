@@ -2,7 +2,7 @@
     - [check indentation error](/Python/check-indentation-error.md)
     - file
       - [get base filename](/Python/file/get-base-filename.md)
-      - [is floder](/Python/file/is-floder.md)
+      - [is file](/Python/file/is-file.md)
       - [rename file](/Python/file/rename-file.md)
       - [traverse floder](/Python/file/traverse-floder.md)
   - Shell
