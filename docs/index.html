@@ -126,9 +126,9 @@
   </script> -->
   <script>
     function move() {
-      var button = document.getElementById('docsify-darklight-theme')
       document.getElementsByClassName('sidebar')[0].setAttribute('id', 'sidebar-full')
       document.getElementById('sidebar-full').appendChild(document.getElementById('docsify-darklight-theme'))
+      var button = document.getElementById('docsify-darklight-theme')
       button.style.position = 'fixed'
       button.style.left = '10px'
       button.style.bottom = '58px'
@@ -136,7 +136,13 @@
       button.style.width = '18px'
       button.style.height = '18px'
     }
-    setTimeout(move, 100)
+    // setInterval(move, 100);
+    var refreshId = setInterval(function() {
+      if (null != document.getElementById('docsify-darklight-theme')) {
+        move();
+        clearInterval(refreshId);
+      }
+    }, 100);
   </script>
   <style>
     .sidebar-nav ul li {
