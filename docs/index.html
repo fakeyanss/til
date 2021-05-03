@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
-    title="docsify-darklight-theme" type="text/css" />
+  <link rel="stylesheet" href="dist/theme.css" title="docsify-darklight-theme" type="text/css" />
 </head>
 
 <body>
@@ -106,7 +105,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-javadoclike.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  <script src="dist/theme.js"></script>
   <script>
     gitalkConfig = {
       clientID: "5b67a155acb256a4fb8a",
@@ -122,7 +121,7 @@
   </script>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+      navigator.serviceWorker.register('dist/sw.js')
     }
   </script>
   <script>
