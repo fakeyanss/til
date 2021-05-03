@@ -119,11 +119,11 @@
       distractionFreeMode: false
     };
   </script>
-  <script>
+  <!-- <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('dist/sw.js')
     }
-  </script>
+  </script> -->
   <script>
     function move() {
       var button = document.getElementById('docsify-darklight-theme')
@@ -131,7 +131,7 @@
       document.getElementById('sidebar-full').appendChild(document.getElementById('docsify-darklight-theme'))
       button.style.position = 'fixed'
       button.style.left = '10px'
-      button.style.bottom = '40px'
+      button.style.bottom = '58px'
       button.style.top = 'auto'
       button.style.width = '18px'
       button.style.height = '18px'
