@@ -125,6 +125,25 @@
       navigator.serviceWorker.register('sw.js')
     }
   </script>
+  <script>
+    function move() {
+      var button = document.getElementById('docsify-darklight-theme')
+      document.getElementsByClassName('sidebar')[0].setAttribute('id', 'sidebar-full')
+      document.getElementById('sidebar-full').appendChild(button)
+      button.style.position = 'fixed'
+      button.style.left = '10px'
+      button.style.bottom = '40px'
+      button.style.top = 'auto'
+      button.style.width = '18px'
+      button.style.height = '18px'
+    }
+    setTimeout(move, 100)
+  </script>
+  <style>
+    .sidebar-nav ul li {
+      margin-left: 25px;
+    }
+  </style>
 </body>
 
 </html>
