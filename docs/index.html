@@ -137,7 +137,7 @@
       button.style.height = '18px'
     }
     // setInterval(move, 100);
-    var refreshId = setInterval(function() {
+    var refreshId = setInterval(function () {
       if (null != document.getElementById('docsify-darklight-theme')) {
         move();
         clearInterval(refreshId);
@@ -147,6 +147,11 @@
   <style>
     .sidebar-nav ul li {
       margin-left: 25px;
+    }
+
+    .sidebar-nav {
+      line-height: 1.5em !important;
+      padding-bottom: 76px;
     }
   </style>
 </body>
