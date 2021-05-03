@@ -129,7 +129,7 @@
     function move() {
       var button = document.getElementById('docsify-darklight-theme')
       document.getElementsByClassName('sidebar')[0].setAttribute('id', 'sidebar-full')
-      document.getElementById('sidebar-full').appendChild(button)
+      document.getElementById('sidebar-full').appendChild(document.getElementById('docsify-darklight-theme'))
       button.style.position = 'fixed'
       button.style.left = '10px'
       button.style.bottom = '40px'
