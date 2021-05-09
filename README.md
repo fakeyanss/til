@@ -103,6 +103,8 @@ docsify-auto-sidebar -d docs
 sed -i "" "/_navbar/d" docs/_sidebar.md # mac
 sed -i "/_navbar/d" docs/_sidebar.md # linux
 
+python build.py
+
 git add .
 ```
 
