@@ -11,5 +11,3 @@
       - [rename file](/Python/file/rename-file.md)
       - [simple file server](/Python/file/simple-file-server.md)
       - [traverse floder](/Python/file/traverse-floder.md)
-  - Shell
-    - [alternative to ls linux](/Shell/alternative-to-ls-linux.md)

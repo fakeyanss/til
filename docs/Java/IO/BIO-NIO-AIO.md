@@ -1,8 +1,8 @@
-## Java 中 BIO、NIO 与 AIO
+# Java 中 BIO、NIO 与 AIO
 
 > 以下摘自 [Java Guide](https://snailclimb.gitee.io/javaguide/#/docs/java/basis/IO%E6%A8%A1%E5%9E%8B?id=java-%e4%b8%ad-3-%e7%a7%8d%e5%b8%b8%e8%a7%81-io-%e6%a8%a1%e5%9e%8b)
 
-### BIO (Blocking I/O)
+## BIO (Blocking I/O)
 
 **BIO 属于同步阻塞 IO 模型** 。
 
@@ -12,7 +12,7 @@
 
 在客户端连接数量不高的情况下，是没问题的。但是，当面对十万甚至百万级连接的时候，传统的 BIO 模型是无能为力的。因此，我们需要一种更高效的 I/O 处理模型来应对更高的并发量。
 
-### NIO (Non-blocking/New I/O)
+## NIO (Non-blocking/New I/O)
 
 Java 中的 NIO 于 Java 1.4 中引入，对应 `java.nio` 包，提供了 `Channel` , `Selector`，`Buffer` 等抽象。NIO 中的 N 可以理解为 Non-blocking，不单纯是 New。它支持面向缓冲的，基于通道的 I/O 操作方法。 对于高负载、高并发的（网络）应用，应使用 NIO 。
 
@@ -47,7 +47,7 @@ Java 中的 NIO ，有一个非常重要的**选择器 ( Selector )** 的概念�
 
 ![img](.asset/0f483f2437ce4ecdb180134270a00144~tplv-k3u1fbpfcp-watermark.image)
 
-### AIO (Asynchronous I/O)
+## AIO (Asynchronous I/O)
 
 AIO 也就是 NIO 2。Java 7 中引入了 NIO 的改进版 NIO 2,它是异步 IO 模型。
 
