@@ -1,4 +1,5 @@
 _site/
+.vscode
 .sass-cache
 Gemfile.lock
 *.gem
