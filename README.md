@@ -2,7 +2,7 @@
 
 Personal Wiki of Interesting things I learn every day at the intersection of software development, computer science & stuff (My Second Brain 🧠️)
 
-## usage
+## Usage
 
 1. install docsify
 ```
@@ -37,4 +37,10 @@ docsify-auto-sidebar -d docs
 
 sed -i "" "/_navbar/d" docs/_sidebar.md # mac
 sed -i "/_navbar/d" docs/_sidebar.md # linux
+
+git add .
 ```
+
+## About
+
+TIL is inspired by [Bhupesh-V/til](https://github.com/Bhupesh-V/til)。

@@ -1,6 +1,8 @@
   - Java
     - IO
       - [BIO NIO AIO](/Java/IO/BIO-NIO-AIO.md)
+  - Miscellaneous
+    - [docsify build](/Miscellaneous/docsify-build.md)
   - Python
     - [check indentation error](/Python/check-indentation-error.md)
     - file
