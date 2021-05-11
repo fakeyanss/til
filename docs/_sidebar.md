@@ -1,6 +1,8 @@
   - Java
     - IO
       - [BIO NIO AIO](/Java/IO/BIO-NIO-AIO.md)
+    - Spring
+      - [loading order of Spring Beans](/Java/Spring/loading-order-of-Spring-Beans.md)
   - Miscellaneous
     - [docsify build](/Miscellaneous/docsify-build.md)
   - Python
