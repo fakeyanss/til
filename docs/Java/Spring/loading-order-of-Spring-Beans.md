@@ -3,6 +3,8 @@
 注意常用的 `@PostConstruct` 在 `InitialzingBean.afterPropertiesSet` 之前执行。
 
 > 下图引用：[Springboot启动扩展点超详细总结，再也不怕面试官问了](https://segmentfault.com/a/1190000023033670)
+>
+> 这是我见过的最最最最完整的顺序图了。
 
 ![1.jpg](.asset/bVbIOgm-0733734.png)
 
