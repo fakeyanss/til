@@ -14,8 +14,8 @@ BASE_DIR = "docs/"
 AVOID_DIRS = [
         "dist",
         "_navbar.md",
-        '_sidebar.md'
-        "'.nojekyll'",
+        '_sidebar.md',
+        ".nojekyll",
         ".asset"
     ]
 
