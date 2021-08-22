@@ -1,5 +1,9 @@
 [
  {
+  "title": "Java 基础",
+  "url": "https://foreti.me/til/#/Java/Basic/java-basic"
+ },
+ {
   "title": "Spring Beans 类加载顺序",
   "url": "https://foreti.me/til/#/Java/Spring/loading-order-of-Spring-Beans"
  },
@@ -14,9 +18,5 @@
  {
   "title": "Java 中 BIO、NIO 与 AIO",
   "url": "https://foreti.me/til/#/Java/IO/BIO-NIO-AIO"
- },
- {
-  "title": "Check indentation errors in python",
-  "url": "https://foreti.me/til/#/Python/check-indentation-error"
  }
 ]
