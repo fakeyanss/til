@@ -1,5 +1,9 @@
 [
  {
+  "title": "Spring Beans 类加载顺序",
+  "url": "https://foreti.me/til/#/Java/Spring/loading-order-of-Spring-Beans"
+ },
+ {
   "title": "构建 docsify 文档项目",
   "url": "https://foreti.me/til/#/Miscellaneous/docsify-build"
  },
@@ -14,9 +18,5 @@
  {
   "title": "Check indentation errors in python",
   "url": "https://foreti.me/til/#/Python/check-indentation-error"
- },
- {
-  "title": "获取路径中的文件名",
-  "url": "https://foreti.me/til/#/Python/file/get-base-filename"
  }
 ]

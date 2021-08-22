@@ -1,6 +1,8 @@
 # Java 中 BIO、NIO 与 AIO
 
-> 以下摘自 [Java Guide](https://snailclimb.gitee.io/javaguide/#/docs/java/basis/IO%E6%A8%A1%E5%9E%8B?id=java-%e4%b8%ad-3-%e7%a7%8d%e5%b8%b8%e8%a7%81-io-%e6%a8%a1%e5%9e%8b)
+> **原文链接 [Java Guide](https://snailclimb.gitee.io/javaguide/#/docs/java/basis/IO%E6%A8%A1%E5%9E%8B?id=java-%e4%b8%ad-3-%e7%a7%8d%e5%b8%b8%e8%a7%81-io-%e6%a8%a1%e5%9e%8b)**
+>
+> **此次仅为方便本人集中查阅，若有来者，请阅读作者原文。侵删。**
 
 ## BIO (Blocking I/O)
 

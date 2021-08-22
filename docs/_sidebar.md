@@ -1,4 +1,6 @@
   - Java
+    - Basic
+      - [java basic](/Java/Basic/java-basic.md)
     - IO
       - [BIO NIO AIO](/Java/IO/BIO-NIO-AIO.md)
     - Spring
