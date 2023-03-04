@@ -20,21 +20,12 @@
 
 
 ## Categories
-* [Golang](#golang) [**`0`**]
 * [Java](#java) [**`3`**]
+* [Makefile](#makefile) [**`1`**]
 * [Miscellaneous](#miscellaneous) [**`1`**]
 * [Python](#python) [**`6`**]
-* [Shell](#shell) [**`0`**]
 
 ---
-
-
-
-
-### Golang
-
-<ul>
-</ul>
 
 
 
@@ -45,6 +36,15 @@
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Java/IO/BIO-NIO-AIO.md">Java 中 BIO、NIO 与 AIO</a>
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Java/Basic/java-basic.md">Java 基础</a>
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Java/Spring/loading-order-of-Spring-Beans.md">Spring Beans 类加载顺序</a>
+</ul>
+
+
+
+
+### Makefile
+
+<ul>
+<li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Makefile/use-shell-variable.md">使用 Shell 变量</a>
 </ul>
 
 
@@ -68,14 +68,6 @@
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Python/file/get-base-filename.md">获取路径中的文件名</a>
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Python/file/traverse-floder.md">遍历文件夹</a>
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Python/file/rename-file.md">重命名文件</a>
-</ul>
-
-
-
-
-### Shell
-
-<ul>
 </ul>
 
 ## Usage

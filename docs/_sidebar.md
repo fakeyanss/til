@@ -5,6 +5,8 @@
       - [BIO NIO AIO](/Java/IO/BIO-NIO-AIO.md)
     - Spring
       - [loading order of Spring Beans](/Java/Spring/loading-order-of-Spring-Beans.md)
+  - Makefile
+    - [use shell variable](/Makefile/use-shell-variable.md)
   - Miscellaneous
     - [docsify build](/Miscellaneous/docsify-build.md)
   - Python
@@ -15,3 +17,4 @@
       - [rename file](/Python/file/rename-file.md)
       - [simple file server](/Python/file/simple-file-server.md)
       - [traverse floder](/Python/file/traverse-floder.md)
+  - [_navbar](/_navbar.md)
