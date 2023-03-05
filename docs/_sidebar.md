@@ -9,6 +9,7 @@
     - [use shell variable](/Makefile/use-shell-variable.md)
   - Miscellaneous
     - [docsify build](/Miscellaneous/docsify-build.md)
+    - [get workspace root path by git](/Miscellaneous/get-workspace-root-path-by-git.md)
   - Python
     - [check indentation error](/Python/check-indentation-error.md)
     - file
@@ -17,4 +18,3 @@
       - [rename file](/Python/file/rename-file.md)
       - [simple file server](/Python/file/simple-file-server.md)
       - [traverse floder](/Python/file/traverse-floder.md)
-  - [_navbar](/_navbar.md)

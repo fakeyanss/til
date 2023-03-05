@@ -22,7 +22,7 @@
 ## Categories
 * [Java](#java) [**`3`**]
 * [Makefile](#makefile) [**`1`**]
-* [Miscellaneous](#miscellaneous) [**`1`**]
+* [Miscellaneous](#miscellaneous) [**`2`**]
 * [Python](#python) [**`6`**]
 
 ---
@@ -54,6 +54,7 @@
 
 <ul>
 <li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Miscellaneous/docsify-build.md">构建 docsify 文档项目</a>
+<li><a target="_blank" href="https://github.com/fakeyanss/til/blob/master/docs/Miscellaneous/get-workspace-root-path-by-git.md">获取当前项目的根目录路径</a>
 </ul>
 
 
